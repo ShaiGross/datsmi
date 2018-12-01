@@ -1,23 +1,22 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content padding>
-  Welcome To Datsmi!!
-  <p>Find yourself in a moment</p>
-  <!-- UserName Input -->
-  <ion-item>
-    <ion-label position="floating">User Name</ion-label>
-    <ion-input position="floating" clearInput></ion-input>
-  </ion-item>
-  <!-- Password Input -->
-  <ion-item>
-    <ion-label position="floating">Password</ion-label>
-    <ion-input type="password" position="floating" clearInput></ion-input>
-  </ion-item>
+<ion-content padding class="log-in-page">
+  <div class="datsmi-logo">
+    <img src="assets/images/datsmi-logo.png"/> <br />
+  </div>
+  <div class="login-inputs">
+    <!-- UserName Input -->
+    <ion-item>
+      <ion-label position="floating" color="medium">User Name</ion-label>
+      <ion-input position="floating" clearInput></ion-input>
+    </ion-item>
+    <!-- Password Input -->
+    <ion-item>
+      <ion-label position="floating" color="medium">Password</ion-label>
+      <ion-input type="password" position="floating" clearInput></ion-input>
+    </ion-item>
+  </div>
   <!-- Login Buttons -->
-  <ion-button color="primary" href="/main/tabs/(home:home)">Log Me In</ion-button>
-  <ion-button color="primary">Sign Me Up</ion-button>
+  <div class="login-btn">
+    <ion-button color="primary" href="/main/tabs/(home:home)">Log Me In</ion-button>
+    <ion-button color="primary">Sign Me Up</ion-button>
+  </div>
 </ion-content>
